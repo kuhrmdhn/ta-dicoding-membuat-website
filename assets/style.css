@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --header-height: 100px;
+    --main-blue: #10ACE2;
+    --text-main: #000000;
+    --text-accent: #888888;
+    --bg-gray: #f3f3f3;
+    --bg-black: #3c3f42
+}
+
+*, html, body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+* {
+    list-style-type: none;
+    text-decoration: none;
+    color: #000;
+    background-color: transparent;
+    border: none;
+    font-family: "Roboto", sans-serif;
+    transition: 300ms;
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -ms-transition: 300ms;
+    -o-transition: 300ms;
+}
+
+html, body {
+    scroll-behavior: smooth;
+}
+
+header {
+    width: 100%;
+    height: var(--header-height);
+    padding: 0 50px;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+}
+
+.text-main-blue {
+    color: var(--main-blue);
+}
+
+.logo-container {
+    width: 50%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.logitech-logo {
+    width: auto;
+    height: 100%;
+}
+
+.navigation-container {
+    height: 100%;
+    width: 50%;
+}
+
+.navigation-list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.navigation-list>li>* {
+    color: var(--text-accent);
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+}
+
+.navigation-list>li>*:hover {
+    color: var(--text-main);
+}
+
+.variants-container {
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+
+#variantLists {
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    top: -2000%;
+    left: -25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#variantLists>li {
+    color: var(--text-main);
+}
+
+#variantLists>li:hover {
+    color: var(--text-accent);
+}
+
+#home {
+    height: 100svh;
+    width: 100%;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    padding-top: var(--header-height);
+}
+
+.home-gray {
+    background: var(--bg-gray);
+}
+
+.home-black {
+    background-color: var(--bg-black);
+}
+
+#productBanner {
+    padding: var(--header-height) 0 0 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100%;
+}
+
+.product-sort-description {
+    color: inherit;
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: start;
+}
+
+.product-series {
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: inherit;
+}
+
+.series-name {
+    color: inherit;
+    font-weight: 500;
+    font-size: 4rem;
+}
+
+.product-variant {
+    color: inherit;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.product-description {
+    color: inherit;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.product-image-container {
+    overflow: hidden;
+    position: relative;
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.product-image {
+    position: absolute;
+    height: 100%;
+    right: -50%;
+    width: auto;
+    aspect-ratio: 4/4;
+}
+
+#graphiteImage {
+    top: 0;
+}
+
+#paleGreyImage {
+    top: -100%;
+}
