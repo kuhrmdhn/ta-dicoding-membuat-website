@@ -1,8 +1,10 @@
-const home = document.querySelectorAll("section");
+const sections = document.querySelectorAll("section");
 const header = document.getElementById("header");
 const textThemes = document.querySelectorAll(".text-light-theme");
-const articleSelectedVariant = document.getElementById("articleSelectedVariant");
-const articleImage = document.getElementById("articleImage")
+const articleSelectedVariant = document.getElementById(
+  "articleSelectedVariant"
+);
+const articleImage = document.getElementById("articleImage");
 const logo = document.getElementById("logo");
 const variantTrigger = document.getElementById("variantTrigger");
 const variantLists = document.getElementById("variantLists");
@@ -16,6 +18,17 @@ const variants = document.querySelectorAll("#variantLists>li");
 const underlineAnimationElements = document.querySelectorAll(
   ".underline-hover-animation-light-theme"
 );
+
+
+export function sectionLightTheme() {
+  sections.forEach((e) => e.classList.add("home-light-theme"));
+  sections.forEach((e) => e.classList.remove("home-dark-theme"));
+}
+
+export function sectionDarkTheme() {
+  sections.forEach((e) => e.classList.add("home-dark-theme"));
+  sections.forEach((e) => e.classList.remove("home-light-theme"));
+}
 
 function showVariantLists() {
   variantLists.style.top = "200%";
@@ -50,17 +63,7 @@ function handleLightUnderlineAnimation() {
   );
 }
 
-function homeLightTheme() {
-  home.forEach((e) => e.classList.add("home-light-theme"));
-  home.forEach((e) => e.classList.remove("home-dark-theme"));
-}
-
-function homeDarkTheme() {
-  home.forEach((e) => e.classList.add("home-dark-theme"));
-  home.forEach((e) => e.classList.remove("home-light-theme"));
-}
-
-console.log(textThemes)
+console.log(textThemes);
 
 function textDarkTheme() {
   textThemes.forEach((text) => text.classList.add("text-dark-theme"));
@@ -86,7 +89,7 @@ function textLightTheme() {
 
 function graphiteMouseShow() {
   articleImage.setAttribute("src", "/assets/images/mx_master_3s_black.png");
-  articleSelectedVariant.innerText = "GRAPHITE"
+  articleSelectedVariant.innerText = "GRAPHITE";
   graphiteImage.classList.add("graphite-mouse-show");
   graphiteImage.classList.remove("graphite-mouse-hide");
   paleGreyImage.classList.add("pale-gray-mouse-hide");
@@ -105,7 +108,7 @@ function paleGrayMouseShow() {
 function handleGraphiteVariant() {
   NavbarLightTheme();
   handleLightUnderlineAnimation();
-  homeLightTheme();
+  sectionLightTheme();
   textLightTheme();
   logo.setAttribute("src", "/assets/images/logitech_icon_black.png");
   graphiteMouseShow();
@@ -115,7 +118,7 @@ function handleGraphiteVariant() {
 function handlePaleGreyVariant() {
   NavbarDarkTheme();
   handleDarkUnderlineAnimation();
-  homeDarkTheme();
+  sectionDarkTheme();
   textDarkTheme();
   logo.setAttribute("src", "/assets/images/logitech_icon_white.png");
   paleGrayMouseShow();
