@@ -1,0 +1,25 @@
+/* 
+    --header-height: 100px;
+    --main-blue: #10ACE2;
+    --text-main: #3D4043;
+    --text-secondary: #f2f2f2;
+    --text-accent: #888888;
+    --bg-gray: #f3f3f3;
+    --bg-black: #000
+*/
+
+.home-light-theme {
+    background-color: var(--bg-gray);
+}
+
+.home-dark-theme {
+    background-color: var(--bg-black);
+}
+
+.text-light-theme {
+    color: var(--text-main);
+}
+
+.text-dark-theme {
+    color: var(--text-secondary);
+}

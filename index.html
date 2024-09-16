@@ -5,49 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Logitech MX Master 3S landing page" />
     <title>Logitech MX Master 3S</title>
-    <link rel="stylesheet" href="/assets/style.css" />
+    <link rel="stylesheet" href="/assets/global.css" />
+    <link rel="stylesheet" href="/assets/animation.css" />
+    <link rel="stylesheet" href="/assets/theme.css" />
   </head>
   <body>
-    <header>
-      <section class="logo-container">
+    <header id="header" class="header-light-theme">
+      <div class="logo-container">
         <img
           id="logo"
           class="logitech-logo"
           src="/assets/images/logitech_icon_black.png"
         />
-      </section>
+      </div>
       <nav class="navigation-container">
         <ul class="navigation-list">
           <li>
-            <a href="#home">Home</a>
+            <a class="underline-hover-animation-light-theme" href="#home"
+              >Home</a
+            >
           </li>
           <li class="variants-container">
-            <a id="variantTrigger">Variant</a>
+            <a class="underline-hover-animation-light-theme" id="variantTrigger"
+              >Variant</a
+            >
             <ul id="variantLists">
-              <li id="graphiteVariant">GRAPHITE</li>
-              <li id="paleGreyVariant">PALE GREY</li>
+              <li
+                class="variant underline-hover-animation-light-theme"
+                id="graphiteVariant"
+              >
+                GRAPHITE
+              </li>
+              <li
+                class="variant underline-hover-animation-light-theme"
+                id="paleGreyVariant"
+              >
+                PALE GREY
+              </li>
             </ul>
           </li>
           <li>
-            <a href="#description">Description</a>
+            <a class="underline-hover-animation-light-theme" href="#description"
+              >Description</a
+            >
           </li>
           <li>
-            <a href="#feature">Feature</a>
+            <a class="underline-hover-animation-light-theme" href="#feature"
+              >Feature</a
+            >
           </li>
         </ul>
       </nav>
     </header>
     <main>
-      <section id="home" class="home-gray">
-        <div id="productBanner">
+      <section id="home" class="home-light-theme">
+        <div id="productBanner" class="text-light-theme">
           <div class="product-sort-description">
             <h4 class="product-series">MASTER SERIES</h4>
             <h2 class="series-name">
               MX MASTER<span class="text-main-blue"> 3S</span>
             </h2>
-            <h3 class="product-variant">
-              <span id="productVariant">GRAPHITE</span> VARIANT
-            </h3>
             <p class="product-description">
               INTRODUCING THE MASTER SERIES BY <br />
               LOGITECH, A RANGE OF PRODUCTS THAT <br />
@@ -58,18 +75,49 @@
           <div class="product-image-container">
             <img
               id="graphiteImage"
-              class="product-image"
+              class="product-image graphite-mouse-show"
               src="/assets/images/mx_master_3s_black.png"
               alt=""
             />
             <img
               id="paleGreyImage"
-              class="product-image"
+              class="product-image pale-gray-mouse-hide"
               src="/assets/images/mx_master_3s_white.png"
               alt=""
             />
           </div>
         </div>
+      </section>
+      <section id="description" class="home-light-theme">
+        <article class="product-article">
+          <aside class="article-image-container">
+            <img
+              id="articleImage"
+              src="/assets/images/mx_master_3s_black.png"
+              alt=""
+            />
+          </aside>
+          <div class="article-description-container text-light-theme">
+            <h2 class="article-variant">
+              <span id="articleSelectedVariant">GRAPHITE</span> SERIES
+            </h2>
+            <p class="article-description product-description">
+              The Logitech MX Master 3S is a premium mouse designed for those
+              who prioritize comfort, productivity, and precision. With an 8000
+              DPI sensor, it glides smoothly on various surfaces, even glass,
+              making it ideal for any workspace. Its MagSpeed electromagnetic
+              scrolling lets you scroll through thousands of lines in seconds
+              with unmatched accuracy. The advanced ergonomic design keeps your
+              hand comfortable even during long hours of use. With customizable
+              buttons tailored to your needs, the MX Master 3S becomes a highly
+              efficient tool for multitasking. If you're looking for the perfect
+              combination of style, technology, and performance, this mouse is
+              the best investment to boost your daily productivity.
+            </p>
+          </div>
+        </article>
+      </section>
+      <section id="feature" class="home-light-theme">
       </section>
     </main>
     <footer></footer>

@@ -3,10 +3,11 @@
 :root {
     --header-height: 100px;
     --main-blue: #10ACE2;
-    --text-main: #000000;
+    --text-main: #3D4043;
+    --text-secondary: #f2f2f2;
     --text-accent: #888888;
     --bg-gray: #f3f3f3;
-    --bg-black: #3c3f42
+    --bg-black: #000
 }
 
 *, html, body {
@@ -18,15 +19,27 @@
 * {
     list-style-type: none;
     text-decoration: none;
-    color: #000;
+    color: var(--text-main);
     background-color: transparent;
     border: none;
     font-family: "Roboto", sans-serif;
-    transition: 300ms;
-    -webkit-transition: 300ms;
-    -moz-transition: 300ms;
-    -ms-transition: 300ms;
-    -o-transition: 300ms;
+    transition: 200ms;
+    -webkit-transition: 200ms;
+    -moz-transition: 200ms;
+    -ms-transition: 200ms;
+    -o-transition: 200ms;
+}
+
+*::selection {
+    background-color: transparent;
+    text-decoration: underline;
+    text-decoration-color: var(--text-accent);
+    -moz-text-decoration-color: var(--text-accent);
+    text-decoration-thickness: 2px;
+}
+
+html::-webkit-scrollbar {
+    width: 0;
 }
 
 html, body {
@@ -45,6 +58,10 @@ header {
     align-items: center;
     justify-content: space-between;
     background-color: transparent;
+}
+
+section {
+    padding-top: var(--header-height);
 }
 
 .text-main-blue {
@@ -88,19 +105,14 @@ header {
     -o-transition: all 300ms ease-in-out;
 }
 
-.navigation-list>li>*:hover {
-    color: var(--text-main);
-}
-
 .variants-container {
     position: relative;
     left: 0;
     top: 0;
 }
 
-
 #variantLists {
-    width: 150px;
+    width: fit-content;
     height: 100px;
     position: absolute;
     top: -2000%;
@@ -110,12 +122,11 @@ header {
     justify-content: space-evenly;
 }
 
-#variantLists>li {
-    color: var(--text-main);
-}
-
-#variantLists>li:hover {
-    color: var(--text-accent);
+.variant {
+    position: relative;
+    width: max-content;
+    padding: 4px 10px;
+    transition-duration: 300ms;
 }
 
 #home {
@@ -124,15 +135,6 @@ header {
     display: flex;
     position: relative;
     overflow: hidden;
-    padding-top: var(--header-height);
-}
-
-.home-gray {
-    background: var(--bg-gray);
-}
-
-.home-black {
-    background-color: var(--bg-black);
 }
 
 #productBanner {
@@ -153,28 +155,24 @@ header {
     justify-content: start;
 }
 
-.product-series {
+.product-series,
+.product-description {
     font-weight: 400;
-    font-size: 1.3rem;
     color: inherit;
+}
+
+.product-series {
+    font-size: 1.3rem;
+}
+
+.product-description {
+    font-size: 1.2rem;
 }
 
 .series-name {
     color: inherit;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 4rem;
-}
-
-.product-variant {
-    color: inherit;
-    font-weight: 500;
-    font-size: 1.5rem;
-}
-
-.product-description {
-    color: inherit;
-    font-weight: 400;
-    font-size: 1.2rem;
 }
 
 .product-image-container {
@@ -195,10 +193,56 @@ header {
     aspect-ratio: 4/4;
 }
 
-#graphiteImage {
-    top: 0;
+#description {
+    width: 100%;
+    height: 100svh;
 }
 
-#paleGreyImage {
-    top: -100%;
+.product-article {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.article-image-container,
+.article-description-container {
+    width: 40%;
+    display: flex;
+}
+
+.article-image-container {
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.article-description-container {
+    height: 75%;
+    flex-direction: column;
+    gap: 50px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.article-variant, #articleSelectedVariant {
+    color: inherit;
+    font-weight: bold;
+    font-size: 2.25rem;
+}
+
+.article-description {
+    text-align: justify;
+}
+
+#feature {
+    width: 100%;
+    height: 100svh;
+}
+
+.feature-icon {
+    fill: aqua;
+    height: 50px;
+    width: 50px;
 }

@@ -1,0 +1,76 @@
+/* 
+    --header-height: 100px;
+    --main-blue: #10ACE2;
+    --text-main: #3D4043;
+    --text-secondary: #f2f2f2;
+    --text-accent: #888888;
+    --bg-gray: #f3f3f3;
+    --bg-black: #000
+*/
+
+.underline-hover-animation-light-theme,
+.underline-hover-animation-dark-theme {
+    position: relative;
+    transition-duration: 300ms;
+    text-decoration: none;
+}
+
+.underline-hover-animation-light-theme:hover,
+.underline-hover-animation-dark-theme:hover {
+    font-weight: bold;
+}
+
+.underline-hover-animation-light-theme::before,
+.underline-hover-animation-dark-theme::before {
+    transition: width 300ms ease, height 300ms ease;
+    height: 0;
+    position: absolute;
+    transform: translateX(50%);
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    content: "";
+    -webkit-transform: translateX(50%);
+    -moz-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    -o-transform: translateX(50%);
+}
+
+.underline-hover-animation-light-theme:hover::before,
+.underline-hover-animation-dark-theme:hover::before {
+    width: 50%;
+    height: 2px;
+}
+
+.underline-hover-animation-light-theme::before {
+    background: var(--bg-black);
+}
+
+.underline-hover-animation-dark-theme::before {
+    background: var(--bg-gray);
+}
+
+
+.underline-hover-animation-light-theme:hover {
+    color: var(--text-main);
+}
+
+.underline-hover-animation-dark-theme:hover {
+    color: var(--text-secondary);
+}
+
+.graphite-mouse-show, .pale-gray-mouse-show {
+    right: -50%;
+}
+
+.graphite-mouse-hide, .pale-gray-mouse-hide {
+    right: -150%;
+}
+
+.header-dark-theme {
+    background: var(--bg-black);
+}
+
+.header-light-theme {
+    background: var(--bg-gray);
+}
