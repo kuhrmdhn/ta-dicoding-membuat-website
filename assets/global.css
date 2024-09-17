@@ -112,14 +112,20 @@ section {
 }
 
 #variantLists {
-    width: fit-content;
+    width: 100vh;
     height: 100px;
     position: absolute;
     top: -2000%;
-    left: -25%;
+    left: 0;
+    transform: translateX(-50%);
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-evenly;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
 }
 
 .variant {
@@ -284,4 +290,20 @@ section {
     height: auto;
     width: 50px;
     aspect-ratio: 4/4;
+}
+
+.footer {
+    height: var(--header-height);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer * {
+    color: inherit;
+}
+
+.footer a {
+    text-decoration: underline;
+    text-underline-offset: 3px;
 }
