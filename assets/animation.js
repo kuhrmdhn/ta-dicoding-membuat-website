@@ -95,7 +95,7 @@ export const imageAnimation = {
   graphiteMouseShow: () => {
     articleImage.setAttribute(
       "src",
-      "/assets/images/mx_master_3s_graphite.png"
+      "assets/images/mx_master_3s_graphite.png"
     );
 
     graphiteImage.classList.add("graphite-mouse-show");
@@ -107,7 +107,7 @@ export const imageAnimation = {
   paleGrayMouseShow: () => {
     articleImage.setAttribute(
       "src",
-      "/assets/images/mx_master_3s_pale_grey.png"
+      "assets/images/mx_master_3s_pale_grey.png"
     );
     paleGreyImage.classList.add("pale-gray-mouse-show");
     paleGreyImage.classList.remove("pale-gray-mouse-hide");

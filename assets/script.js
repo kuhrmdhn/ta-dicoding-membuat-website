@@ -21,7 +21,7 @@ const paleGreyVariant = document.getElementById("paleGreyVariant");
 
 function graphiteVariantTheme() {
   articleSelectedVariant.innerText = "GRAPHITE";
-  logo.setAttribute("src", "/assets/images/logitech_icon_black.png");
+  logo.setAttribute("src", "assets/images/logitech_icon_black.png");
   headerLightTheme();
   underlineLightTheme();
   sectionLightTheme();
@@ -32,7 +32,7 @@ function graphiteVariantTheme() {
 
 function paleGreyVariantTheme() {
   articleSelectedVariant.innerText = "PALE GRAY";
-  logo.setAttribute("src", "/assets/images/logitech_icon_white.png");
+  logo.setAttribute("src", "assets/images/logitech_icon_white.png");
   headerDarkTheme();
   underlineDarkTheme();
   sectionDarkTheme();
