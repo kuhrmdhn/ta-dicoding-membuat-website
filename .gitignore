@@ -1,2 +1,6 @@
 # Ignore node module
 node_modules
+
+# Ignore unbuild css and javascript
+assets/*.css
+assets/*.js
