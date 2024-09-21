@@ -8,6 +8,7 @@ esbuild.build({
   sourcemap: true,
   loader: {
     '.png': 'file',
+    '.webp': 'file',
     '.css': 'css'
   },
 }).catch(() => process.exit(1));

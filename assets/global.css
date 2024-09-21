@@ -2,7 +2,7 @@
 
 :root {
     --header-height: 100px;
-    --main-blue: #10ACE2;
+    --main-blue: #0091EA;
     --text-main: #3D4043;
     --text-secondary: #f2f2f2;
     --text-accent: #888888;
@@ -96,7 +96,7 @@ section {
 }
 
 .navigation-list>li>* {
-    color: var(--text-accent);
+    color: var(--text-main);
     cursor: pointer;
     transition: all 300ms ease-in-out;
     -webkit-transition: all 300ms ease-in-out;
@@ -190,7 +190,7 @@ section {
 .product-image {
     height: 100%;
     width: auto;
-    aspect-ratio: 4/4;
+    aspect-ratio: auto;
 }
 
 #description {
@@ -221,7 +221,7 @@ section {
 #articleImage {
     height: 100%;
     width: auto;
-    aspect-ratio: 4/4;
+    aspect-ratio: auto;
 }
 
 .article-description-container {
@@ -289,7 +289,7 @@ section {
 .feature-icon {
     height: auto;
     width: 25px;
-    aspect-ratio: 4/4;
+    aspect-ratio: auto;
 }
 
 .footer {
@@ -463,6 +463,7 @@ section {
     #home {
         height: 100svh;
     }
+
     .product-image-container {
         width: 30%;
         height: 80%;

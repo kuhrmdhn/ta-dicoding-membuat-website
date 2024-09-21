@@ -6,7 +6,7 @@ import {
   textTheme,
   underlineAnimation,
 } from "./animation.js";
-const { dropDownOnClose, dropDownTrigger, hideDropDown, showDropDown } = dropDownAnimation;
+const { dropDownOnClose, dropDownTrigger, hideDropDown } = dropDownAnimation;
 const { headerDarkTheme, headerLightTheme } = headerTheme;
 const { graphiteMouseShow, paleGrayMouseShow } = imageAnimation;
 const { sectionDarkTheme, sectionLightTheme } = sectionTheme;
@@ -21,7 +21,7 @@ const paleGreyVariant = document.getElementById("paleGreyVariant");
 
 function graphiteVariantTheme() {
   articleSelectedVariant.innerText = "GRAPHITE";
-  logo.setAttribute("src", "assets/images/logitech_icon_black.png");
+  logo.setAttribute("src", "assets/images/logitech_icon_black.webp");
   headerLightTheme();
   underlineLightTheme();
   sectionLightTheme();
@@ -32,7 +32,7 @@ function graphiteVariantTheme() {
 
 function paleGreyVariantTheme() {
   articleSelectedVariant.innerText = "PALE GRAY";
-  logo.setAttribute("src", "assets/images/logitech_icon_white.png");
+  logo.setAttribute("src", "assets/images/logitech_icon_white.webp");
   headerDarkTheme();
   underlineDarkTheme();
   sectionDarkTheme();

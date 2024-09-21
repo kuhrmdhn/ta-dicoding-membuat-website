@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Logitech MX Master 3S landing page" />
     <title>Logitech MX Master 3S</title>
-    <link rel="stylesheet" href="dist/animation.css" />
-    <link rel="stylesheet" href="dist/global.css" />
-    <link rel="stylesheet" href="dist/theme.css" />
+    <link rel="stylesheet" href="dist/animation.css" onload="this.media='all'"/>
+    <link rel="stylesheet" href="dist/global.css" onload="this.media='all'"/>
+    <link rel="stylesheet" href="dist/theme.css" onload="this.media='all'"/>
   </head>
   <body>
     <header id="header" class="header-light-theme">
       <div class="logo-container">
         <img
           id="logo"
+          alt="logitech logo icon"
           class="logitech-logo"
-          src="assets/images/logitech_icon_black.png"
+          src="assets/images/logitech_icon_black.webp"
         />
       </div>
       <nav class="navigation-container">
@@ -76,13 +77,13 @@
             <img
               id="graphiteImage"
               class="product-image graphite-mouse-show"
-              src="assets/images/mx_master_3s_graphite.png"
+              src="assets/images/mx_master_3s_graphite.webp"
               alt="Logitech MX Master 3S Graphite Variant"
             />
             <img
               id="paleGreyImage"
               class="product-image pale-gray-mouse-hide"
-              src="assets/images/mx_master_3s_pale_grey.png"
+              src="assets/images/mx_master_3s_pale_grey.webp"
               alt="Logitech MX Master 3S Pale Grey Variant"
             />
           </div>
@@ -93,7 +94,7 @@
           <aside class="article-image-container">
             <img
               id="articleImage"
-              src="assets/images/mx_master_3s_graphite.png"
+              src="assets/images/mx_master_3s_graphite.webp"
               alt="Logitech MX Master 3S Graphite Variant"
             />
           </aside>
@@ -179,15 +180,15 @@
       </section>
     </main>
     <footer class="text-light-theme footer home-light-theme">
-      <h5>
+      <h4>
         UI Reference by
         <a href="https://www.figma.com/@marifm1986">Arif Matubber</a> in
         <a href="https://www.figma.com/community/file/1339920214170756641">
           Figma Community
         </a>
-      </h5>
+      </h4>
     </footer>
   </body>
-  <script type="module" src="dist/script.js"></script>
-  <script type="module" src="dist/animation.js"></script>
+  <script type="module" src="dist/script.js" defer></script>
+  <script type="module" src="dist/animation.js" defer></script>
 </html>
