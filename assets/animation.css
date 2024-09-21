@@ -60,11 +60,11 @@
 }
 
 .graphite-mouse-show, .pale-gray-mouse-show {
-    right: -50%;
+    right: 25%;
 }
 
 .graphite-mouse-hide, .pale-gray-mouse-hide {
-    right: -150%;
+    right: -100%;
 }
 
 .header-dark-theme {
@@ -74,3 +74,18 @@
 .header-light-theme {
     background: var(--bg-gray);
 }
+
+@media only screen and (min-width: 768px) {
+    .graphite-mouse-show, .pale-gray-mouse-show {
+        transform: translateX(25%);
+        -webkit-transform: translateX(25%);
+        -moz-transform: translateX(25%);
+        -ms-transform: translateX(25%);
+        -o-transform: translateX(25%);
+    }
+
+    .graphite-mouse-hide, .pale-gray-mouse-hide {
+        right: -200%;
+    }
+}
+
