@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../assets/theme.css"],
+  "sourcesContent": ["/* \r\n    --header-height: 100px;\r\n    --main-blue: #10ACE2;\r\n    --text-main: #3D4043;\r\n    --text-secondary: #f2f2f2;\r\n    --text-accent: #888888;\r\n    --bg-gray: #f3f3f3;\r\n    --bg-black: #000\r\n*/\r\n\r\n.home-light-theme {\r\n    background-color: var(--bg-gray);\r\n}\r\n\r\n.home-dark-theme {\r\n    background-color: var(--bg-black);\r\n}\r\n\r\n.text-light-theme {\r\n    color: var(--text-main);\r\n}\r\n\r\n.text-dark-theme {\r\n    color: var(--text-secondary);\r\n}"],
+  "mappings": "AAUA,CAAC,iBACG,iBAAkB,IAAI,UAC1B,CAEA,CAAC,gBACG,iBAAkB,IAAI,WAC1B,CAEA,CAAC,iBACG,MAAO,IAAI,YACf,CAEA,CAAC,gBACG,MAAO,IAAI,iBACf",
+  "names": []
+}
